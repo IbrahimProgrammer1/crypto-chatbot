@@ -1,0 +1,99 @@
+═══════════════════════════════════════════════════════════════
+  🎉 SWITCHED TO COHERE API - SETUP GUIDE
+═══════════════════════════════════════════════════════════════
+
+Your chatbot now uses Cohere AI instead of Google Gemini!
+
+Cohere is:
+✅ More reliable and easier to set up
+✅ Has a generous FREE tier (1000 API calls/month)
+✅ No complex project setup required
+✅ Works immediately after getting the key
+
+═══════════════════════════════════════════════════════════════
+  📝 STEP 1: Get Your FREE Cohere API Key (2 Minutes)
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://dashboard.cohere.com/api-keys
+
+2. Sign up with:
+   - Google account (fastest)
+   - OR Email
+
+3. After signing in, you'll see your API keys page
+
+4. Click "Create API Key" or use the default key shown
+
+5. Copy the ENTIRE key (starts with something like: co_...)
+
+═══════════════════════════════════════════════════════════════
+  📝 STEP 2: Update Your .env.local File
+═══════════════════════════════════════════════════════════════
+
+1. Open: D:\01-Professional-Portfolio\gemini-crypto-chatbot\.env.local
+
+2. Replace line 2 with your Cohere API key:
+
+   COHERE_API_KEY=your_cohere_key_here
+
+3. Save the file (Ctrl+S)
+
+═══════════════════════════════════════════════════════════════
+  📝 STEP 3: Test Your Setup
+═══════════════════════════════════════════════════════════════
+
+Run this command to verify everything works:
+
+    node test-cohere.js
+
+You should see: ✅ SUCCESS! Cohere API is working!
+
+═══════════════════════════════════════════════════════════════
+  📝 STEP 4: Start Your Chatbot
+═══════════════════════════════════════════════════════════════
+
+    npm run dev
+
+Then open: http://localhost:3000
+
+Test with: "Hello, what can you help me with?"
+
+═══════════════════════════════════════════════════════════════
+  🎯 What Changed?
+═══════════════════════════════════════════════════════════════
+
+✅ Replaced Google Gemini with Cohere AI
+✅ Updated all API routes
+✅ Created new Cohere service
+✅ Updated environment variables
+✅ All other features remain the same
+
+═══════════════════════════════════════════════════════════════
+  💡 Cohere Free Tier Limits
+═══════════════════════════════════════════════════════════════
+
+- 1,000 API calls per month (FREE)
+- command-r model (powerful and fast)
+- No credit card required
+- Perfect for development and testing
+
+═══════════════════════════════════════════════════════════════
+  ❓ Troubleshooting
+═══════════════════════════════════════════════════════════════
+
+If you get errors:
+
+1. Make sure you copied the ENTIRE API key
+2. Check for extra spaces in .env.local
+3. Restart your dev server after updating the key
+4. Run: node test-cohere.js to verify the key works
+
+═══════════════════════════════════════════════════════════════
+  🚀 Ready to Go!
+═══════════════════════════════════════════════════════════════
+
+Once you add your Cohere API key, your chatbot will work perfectly!
+
+No more API issues - Cohere is much more reliable than Gemini.
+
+═══════════════════════════════════════════════════════════════

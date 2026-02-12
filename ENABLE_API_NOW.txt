@@ -1,0 +1,92 @@
+═══════════════════════════════════════════════════════════════
+  🔴 CRITICAL: API Not Enabled for Your Project
+═══════════════════════════════════════════════════════════════
+
+Your API key is VALID, but the Generative Language API is NOT enabled.
+
+This is why you're getting 404 errors for ALL models.
+
+═══════════════════════════════════════════════════════════════
+  ✅ SOLUTION: Enable the API (Takes 1 Minute)
+═══════════════════════════════════════════════════════════════
+
+STEP 1: Enable the Generative Language API
+───────────────────────────────────────────────────────────────
+
+1. Click this link:
+   👉 https://console.cloud.google.com/apis/library/generativelanguage.googleapis.com
+
+2. Make sure you're signed in with the SAME Google account you used to create the API key
+
+3. At the top, select the PROJECT where you created your API key
+   (Look for the project dropdown near the top-left)
+
+4. Click the blue "ENABLE" button
+
+5. Wait 30 seconds for the API to be enabled
+
+
+STEP 2: Verify It Works
+───────────────────────────────────────────────────────────────
+
+After enabling, run:
+
+    node test-v1-api.js
+
+You should see: ✅ SUCCESS!
+
+
+STEP 3: Restart Your Server
+───────────────────────────────────────────────────────────────
+
+    npm run dev
+
+
+═══════════════════════════════════════════════════════════════
+  🎯 ALTERNATIVE: Create Key with API Pre-Enabled
+═══════════════════════════════════════════════════════════════
+
+If the above doesn't work, try this instead:
+
+1. Go to: https://aistudio.google.com/app/apikey
+
+2. Click "Create API key"
+
+3. Choose "Create API key in new project"
+   (This should auto-enable the API)
+
+4. Copy the new key
+
+5. Update .env.local:
+   GEMINI_API_KEY=your_newest_key_here
+
+6. Test: node test-v1-api.js
+
+
+═══════════════════════════════════════════════════════════════
+  ❓ How to Find Your Project
+═══════════════════════════════════════════════════════════════
+
+1. Go to: https://console.cloud.google.com/apis/credentials
+
+2. Find your API key in the list (it will show the project name)
+
+3. Click on the project name to switch to that project
+
+4. Then go back to enable the API
+
+
+═══════════════════════════════════════════════════════════════
+  📝 After Enabling the API
+═══════════════════════════════════════════════════════════════
+
+Your chatbot will work immediately! No code changes needed.
+
+Just:
+1. Enable the API
+2. Wait 30 seconds
+3. Run: npm run dev
+4. Test your chatbot!
+
+
+═══════════════════════════════════════════════════════════════
